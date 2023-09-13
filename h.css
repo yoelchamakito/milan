@@ -1,0 +1,341 @@
+
+:root {
+    --color-abremenu: #990000;
+    --color-secundario: #940253;
+    --color-fondo: #202020;
+    --color-texto: #e6e6e6;
+    --color-inicio: #fff;
+    --color-vini:  #000;
+    --color-c4: #c40808;
+    --color-diablo: #666;
+    --color-gb: #e23a31;
+    --color-gbred: #771a0abe;
+    --color-negro: #000000;
+    --color-bulla: #1f2f8dbe;
+}
+
+
+
+
+
+
+
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 62.5%;
+}
+/* agregar conversion a rem
+/* SECCION INICIO */
+
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/paolo.jpg");
+    background-size: cover; /* le hace un tipo de zoom al fondo para que se vea de diferente manera*/
+    background-position: center; /* alinea el fondo */
+    color:var(--color-inicio);
+}
+.inicio .contenido-seccion{
+    max-width: 62.5rem;
+    margin: auto;
+    text-align: center;
+    padding: 0 1.25rem;
+}
+.inicio .contenido-seccion header{
+    padding: 1.875rem;
+}
+/* menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 3.75rem;
+    background-color: var(--color-abremenu);
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    text-align: left;
+    z-index: 99; /* esto hace que el titulo que se mueve se ponga  que el navbar*/
+    display: none;/* hace que al abrir la pagina el menu este oculto */
+    text-align: center;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: var(--color-inicio);
+    text-decoration: none;
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+}
+/* ****** */
+.inicio .contenido-seccion header .logo{
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 2.1875rem var(--color-inicio);
+}
+.inicio .contenido-seccion header .logo .color{
+    color: var(--color-abremenu);
+    font-family: "Yellowtail";
+}
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: var(--color-abremenu);
+    font-size: 1.24rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    line-height: 3.125rem;
+    cursor: grabbing;
+    transition: 0.3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 2.1875rem var(--color-inicio);
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 8.125rem;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 6rem;
+    letter-spacing: 0.3125rem;  /*0.3125rem , alarga el tamaño del titulo */
+}
+
+.inicio .contenido-seccion .info .redes{
+    margin: 1.25rem 0; /* distancia entre los iconos y el texto*/
+  
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;/* permite a sus hrmnos abarcar espacios vacios*/
+    background-color: var(--color-vini);/* fondo del icono */
+    color: var(--color-abremenu);/* color del logo */
+    border: 0.0625rem solid var(--color-abremenu);
+    border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    line-height: 2.5rem;
+    margin: 0 0.3125rem;
+    transition: 0.3s;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: var(--color-inicio);
+    background-color: var(--color-c4);/* color del fondo del icono cuando pinchas el icono*/
+    box-shadow: 0 0 1.25rem var(--color-inicio);/* color q da cuando pinchas el icono */
+    width: 3rem;
+    height: 3rem;
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 25rem;
+    border-radius: 50%;
+    border: 0.3125rem solid var(--color-abremenu);
+    position: absolute;
+    left: 50%;
+    top: -6.25rem;
+    transform: translateX(-50%);
+    
+}
+
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 3rem;
+    
+}
+
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: var(--color-texto);
+    padding: 27.75rem 0 6.25rem 0;
+    text-align: center;
+    
+}
+.sobremi .contenido-seccion{
+    max-width: 62.5rem;
+    margin: auto;
+    padding: 0 1.25rem;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.sobremi .contenido-seccion .especial{
+    color: var(--color-diablo);
+    font-weight: bold;
+    margin-top: 0.9375rem;
+}
+.sobremi .contenido-seccion p{
+    max-width: 43.75rem;
+    margin: auto;
+    color: var(--color-diablo);
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 1.875rem;
+    
+}
+.sobremi p{
+font-size: 2.6rem;
+
+
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: var(--color-secundario);
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.125rem solid var(--color-secundario);
+    line-height: 2.5rem;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+
+/* SECCION CONTACTO */
+.liceo{
+    width: 60rem;
+    margin-bottom: 5rem;
+
+}
+.contacto{
+    background-color: var(--color-fondo);
+    padding: 14.75rem 0 2.25rem 0;
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 2.0rem;    
+}
+.contacto .contenido-seccion{
+    max-width: 62.5rem;
+    margin: auto;
+    padding: 0 1.25rem;
+}
+.contacto .contenido-seccion h3{
+    
+    font-size: 1.875rem;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;/* hace que los textos esten de lado y no esten para abajo */
+    justify-content: space-around;/* mueve de lugar el texto de contacto*/
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 3.125rem;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: var(--color-abremenu);
+}
+
+/* SECCION RESPONSIVE */
+@media screen  and  (max-width: 768px){
+    /* Hacer el texto más grande */
+    .contenido-seccion h1, .contenido-seccion h2, .contenido-seccion h3, .contenido-seccion h4, .contenido-seccion h5, .contenido-seccion h6 {
+        font-size: 3rem; /* Tamaño de fuente más grande para títulos */
+    }
+    /* Aumentar el tamaño de la imagen */
+    .contenido-seccion .foto img{
+        max-width: 56.25rem; /* Cambia el tamaño de la imagen según tu preferencia */
+        top: -9.375rem; /* posición de la imagen */
+    }
+    /* Hacer que las columnas ocupen todo el ancho */
+    .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    /* Hacer que los íconos en la sección SOBRE MI sean más grandes */
+    .sobremi .contenido-seccion .fila .col i{
+        font-size: 0.900rem; /* Cambia el tamaño de los íconos  */
+        line-height: 5rem; /* Ajusta la altura de línea para centrar los íconos verticalmente */
+    }
+    /* Hacer que el texto en la sección SOBRE MI sea más grande */
+    .sobremi .contenido-seccion h3{
+        font-size: 1.875rem; /* Cambia el tamaño del título */
+    }
+    .sobremi .contenido-seccion p{
+        font-size: 2rem; /* Cambia el tamaño del texto  */
+    }
+    /* Hacer que los títulos en la sección CONTACTO sean más grandes */
+    .contacto .contenido-seccion h3, .contacto .contenido-seccion h2 {
+        font-size: 2.25rem; /* Cambia el tamaño de los títulos */
+    }
+    .inicio .contenido-seccion header .nav-bar {
+        font-size: 2.1875rem; /* Cambia el tamaño del ícono del menú lateral */
+        line-height: 3.125rem; /* Mantener la altura de línea para centrar el ícono verticalmente */
+    }
+    
+}
+
+/* ESTO CORRESPONDE AL ICONO DE WSP*/
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  #imagen-ampliada {
+      max-width: 90%;
+      max-height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+/* titulo GABRIEL ESTUDIANTE */
+.gabriel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 14vw;
+    color: var(--color-gb);
+    -webkit-text-stroke: 0.3vw var(--color-gbred);
+    text-transform: uppercase;
+}
+.gabriel::before{ /* Es usado normalmente para añadir contenido estético a un elemento*/
+    content: attr(data-text);/* si se sac este code no aparece el text animado*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100;
+    color: var(--color-negro);
+    -webkit-text-stroke: 0vw var(--color-bulla);
+    overflow: hidden;/* para que desaparezca al momento de llegar a la izq*/
+    animation: animate 6s linear forwards infinite;
+}
+
+@keyframes animate
+{
+    0%, 10%, 500%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}

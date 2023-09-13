@@ -1,0 +1,282 @@
+:root{
+ --color-fondo: #913333;
+ --color-fondo1: #ca9696;
+ --color-fondo2: #200e0e;
+ --color-fondo3: #f0f0f0;
+ --color-milan: #972f0f;
+ --color-rojo: #943737;
+ --color-black: #000000;
+ --color-f3: #f3ecec;
+ --color-ccc: #cccccc00;
+ --color-f4: #f4f4f459;
+ --color-f66: #ff660098;
+ --color-pivot: #555;
+ --color-anuel: #e0e0e0;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* Estilos generales */
+body {
+    font-family: 'Monofett', monospace;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 62.5%;
+    
+} /* conversion a rem
+
+
+/* Estilo para el fondo resplandeciente */
+body {
+    background: linear-gradient(-45deg, var(--color-fondo), var(--color-fondo1), var(--color-fondo2), var(--color-fondo3));
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Barra de navegación */
+.nav {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+
+  }
+  
+  .nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .nav a {
+    padding: .5rem .8rem;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .nav a::before,/* before te agrega algo antes*/
+  .nav a::after /*after para agregar algo despues de tal cosa*/{
+    content: '';
+    height: 1.111rem;
+    width: 1.111rem;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;/* para arreglar cuando se presiona los botones del nav bar*/
+    border-top: 0.2rem solid var(--color-milan);
+    border-right: 0.2rem solid var(--color-milan);
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 0.2rem solid var(--color-milan);
+    border-left: 0.2rem solid var(--color-milan);
+    transform: translate(100%, -50%)/* hace una mini transicion al apretar un boton de nav bar*/
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: var(--color-rojo);
+  }
+
+/* Encabezado */
+header {
+    text-align: center;
+    color: var(--color-black);
+    padding: 6rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.6rem;
+    color: var(--color-f3);
+}
+
+/* Estilo para el contenido */
+.contenido {
+
+    margin: 2rem auto;
+    padding: 3rem;
+    border: 0.0625rem solid var(--color-ccc); /* Conversión aproximada de 1px a rem */
+    background-color: #ffffff5d;
+    width: 80rem;
+}
+.contenido:target {
+    border: 0.2rem solid var(--color-f66);
+    box-shadow: 0 0 1rem rgba(255, 102, 0, 0.5);
+}
+
+
+
+
+
+
+/* Estilo para cada trabajo o institución */
+.trabajo,
+.institucion {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1rem solid var(--color-ccc);
+    background-color: var(--color-f4);
+    transition: background-color 0.3s ease;
+    
+}
+
+.trabajo h3,
+.institucion h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.trabajo p,
+.institucion p {
+    font-size: 1.655rem;
+    color: var(--color-pivot);
+}
+
+/* Estilo para la lista de habilidades */
+.habilidades-lista {
+    list-style: none;
+}
+
+.habilidades-lista li {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+#contacto{
+font-size: 1.5rem;
+
+}
+.contenido h2{
+
+font-size: 2.5rem;
+
+}
+/* Pseudoclase hover para trabajos e instituciones */
+.trabajo:hover,
+.institucion:hover {
+    background-color: var(--color-anuel);
+    transition: background-color 0.3s ease;
+}
+/* El resto del código CSS se mantiene igual */
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.125rem; /* Ajustar el tamaño de fuente en dispositivos móviles */
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 1rem 0;
+    }
+
+    .contenido {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .trabajo,
+    .institucion {
+        padding: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .trabajo h3,
+    .institucion h3 {
+        font-size: 1.5rem;
+    }
+
+    .trabajo p,
+    .institucion p {
+        font-size: 1.5rem;
+    }
+
+    .habilidades-lista li {
+        font-size: 1.5rem;
+    }
+    
+
+    
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

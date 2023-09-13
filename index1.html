@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h.css">
+    <title>GABRIEL BURGOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta name="author" content="GabrielGOAT">
+</head>
+<body>
+
+    <!-- HACER OTRA PAGINA QUE CONTENGA CURRICULUM Y ENLAZARLA NASHEEE-->
+    <!-- SECCION INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+            <header>
+                <div class="nav-bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav id="nav" class="nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobremi">Sobre mí</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="h.html">CURRICULUM</a>
+                </nav>
+                <div class="logo"> G<span class="color">B</span>
+                </div>
+            </header>
+            <div class="info">
+                <h1 class="gabriel" data-text="GABRIEL ">GABRIEL  </h1>
+                <h1 class="gabriel " data-text="ESTUDIANTE ..." >ESTUDIANTE ...  </h1>
+                
+                <div class="redes">
+                    <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"  style="color: #2444ad;"  ></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram" ></i></a>
+                    <a href="#" onclick="mostrarFoto('img/frame.png')"><i class="fab fa-whatsapp" style="color: #990000;"></i></a>
+                    
+                    
+                </div>
+            </div>
+            <div class="foto">
+                <img src="img/theosexy.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Sobre Mi</h2>
+            <h3>Detalles personales</h3>
+
+            <p class="especial">¡Hola! Soy Gabriel</p>
+            <p> estudiante de programación en el Liceo Industrial de Electrotecnia Ramón Barros Luco. Apasionado por la 
+                tecnología y la resolución de problemas a través del código. ¡Listo para aprender y crecer en este emocionante camino!</p>
+
+            
+    </section>
+
+    
+   
+    
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <img src="img/liceo.png" alt="" class="liceo">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3>ESTA ES OTRA MANERA DE CONTACTARME ;)</h3>
+
+            <div class="fila">
+                
+                <div class="col">
+                    <h2>
+                        <a class="fa-solid fa-envelope" href="mailto:g.burgosalarcon@liceorbl.cl"></a>
+                    </h2>
+                    <span class="info-contacto">g.burgosalarcon@liceorbl.cl</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-globe"></i> Página Web
+                    </h2>
+                    <span class="info-contacto">gabriel.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" onclick="ocultarFoto()">
+        <img id="imagen-ampliada" src="img/frame (1).png" alt="Imagen Ampliada">
+    </div>
+    <script src="app.js"></script>
+  
+</body>
+</html>
